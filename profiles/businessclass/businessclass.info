@@ -1,0 +1,39 @@
+name = Business Class 7.x Easy Setup
+description = Select this profile and get a Business Class site up and running within few minutes. <br/>IMPORTANT NOTICE: To use our installation profile do not enter any table prefixes. Please let those blank and continue to the next step.
+version = VERSION
+core = 7.x
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = toolbar
+dependencies[] = overlay
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+
+
+dependencies[] = php
+dependencies[] = blog
+dependencies[] = contact
+dependencies[] = ctools
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = nice_menus
+dependencies[] = mtt_twitter
+files[] = businessclass.profile
+
+version = "7.x"
+project = "businessclass"

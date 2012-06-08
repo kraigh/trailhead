@@ -1,0 +1,12 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+# Ignore various other cruft
+.DS_Store
+.esproj
+/backup
+/tmp
+/dumps
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
