@@ -161,7 +161,10 @@ div.field-type-taxonomy-term-reference .field-items .field-item { float: left; p
 /* 
 * Layout 
 */
-#header { clear:both; background: #ffffff; border-bottom:1px solid #dadada; }
+#header { clear:both;
+	border-bottom:3px solid #dadada;
+	background: url('images/groovepaper.png') #000000;
+}
 
 #header-inside { width: 940px; margin: 0 auto; } 
 
@@ -195,8 +198,20 @@ text-shadow: 0 1px 1px #999999, 0 -1px 1px #ffffff; }
 
 #highlighted {  margin: 0 auto; display:block; position:relative; width:940px; padding:0 10px; }
 
-#intro { width: 710px; margin: 0 auto; display:block; position:relative; padding:0 125px; text-align:center; font-size:18px; color:#4f4f4f; line-height:140%; 
-text-shadow:0 1px 0 #ffffff; } 
+#intro { width: 710px; margin: 0 auto; display:block; position:relative; padding:0 125px; text-align:center; font-size:22px; color:#4f4f4f; line-height:140%; 
+text-shadow:0 1px 0 #ffffff; margin-bottom: 20px;
+}
+
+.bracket{
+	color: #424e47;
+	font-size: 60px;
+	top: 10px;
+	position: relative;
+}
+
+.insidebracket{
+
+}
 
 #messages-console { width: 940px; margin: 0 auto; padding:10px; } 
 
@@ -218,7 +233,7 @@ background: linear-gradient(top, #dddddd 0%, #ffffff 50%, #f0f0f0 100%);
 filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#efefef');
 }
 
-#page { background:transparent url('images/noise.png'); padding:45px 0 0 0;}
+#page { background: url('images/tex2res5.png') transparent; padding:45px 0 0 0;}
 
 #navigation { clear:both; width: 940px; margin: 0 auto; padding:0 10px 40px;  display:block; }
 
@@ -228,7 +243,7 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', end
 
 #page-inside-wrapper { background:transparent url('images/page-inside-shadow.png') no-repeat bottom; margin: 0 auto -150px; padding:0 0 45px 0; position:relative; } 
 
-#page-inside { width: 940px; margin: 0 auto; padding:10px; overflow:hidden; display:block; background:#ffffff; position:relative;
+#page-inside { width: 940px; margin: 0 auto; padding:10px; overflow:hidden; display:block; background:url('images/groovepaper.png'); position:relative;
 /*Box-shadow*/
 -webkit-box-shadow: 0 1px 5px #959595; -moz-box-shadow: 0 1px 5px #959595; -o-box-shadow: 0 1px 5px #959595; box-shadow: 0 1px 5px #959595; } 
 
@@ -266,10 +281,10 @@ background-image: linear-gradient(top, #FBFBFB 0%, #EAEAEA 100%);
 filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFBFB', endColorstr='#EAEAEA');
 }
 
-#promoted { background:transparent url('images/noise.png'); padding:0;}
+#promoted { background:transparent url('images/tex2res5.png'); padding:0;}
 
-#promoted-inside-wrapper { background:transparent url('images/page-inside-shadow.png') no-repeat bottom; margin: 0 auto -150px; padding:0 0 45px 0; position:relative; } 
-#promoted-inside { width: 940px; margin: 0 auto; padding:10px; overflow:hidden; display:block; background:#ffffff url('images/line.png') no-repeat top; position:relative;
+#promoted-inside-wrapper { background:transparent; margin: 0 auto -150px; padding:0 0 45px 0; position:relative; } 
+#promoted-inside { width: 940px; margin: 0 auto; padding:10px; overflow:hidden; display:block; background:#ffffff url('images/groovepaper.png') repeat; position:relative;
 -moz-box-shadow: 0 0 6px #dfdfdf; -webkit-box-shadow: 0 0 6px #dfdfdf; -o-box-shadow: 0 0 6px #dfdfdf;  box-shadow: 0 0 6px #dfdfdf; } 
 
 #promoted-inside .region-promoted { padding:20px; margin:0; }
@@ -691,7 +706,7 @@ div.messages.warning { background:#eb7a01; border:1px solid #d2ac7f; padding:10p
 div.messages.status a, div.messages.error a, div.messages.warning a { color:#ffffff; text-decoration:underline; }
 
 /* Javascript slideshow */
-#slideshow-wrapper { background:transparent url('images/slideshow-shadow.png') no-repeat bottom; margin: 0 auto; padding:0 0 70px 0; position:relative; } 
+#slideshow-wrapper { background:transparent; margin: 0 auto; padding:0 0 70px 0; position:relative; } 
 
 #slider { width:940px; height:340px; overflow:hidden; border:10px solid #ffffff; margin:0 auto; position:relative; 
 /* shadow */
@@ -963,3 +978,10 @@ font-size:16px; font-fanily: 'Open Sans',Helvetica Neue, Helvetica, Arial, Sans-
 
 #toTop { width:100px; background:#00a3e5 url("images/backtotop-arrow.png") no-repeat 8px center; text-align:center; padding:5px 5px 5px 15px; position:fixed; color:#ffffff;
 bottom:60px; right:10px; cursor:pointer; display:none; z-index:100; -webkit-border-radius: 5px; -o-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;  }
+
+
+
+
+
+
+
