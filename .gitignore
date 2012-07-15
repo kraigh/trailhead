@@ -8,5 +8,4 @@ sites/*/settings*.php
 /dumps
 
 # Ignore paths that contain user-generated content.
-sites/*/files
 sites/*/private
