@@ -150,3 +150,13 @@ ul.company-info li.facebook { background:url('images/facebook.png') no-repeat le
 ul.company-info li.twitter { background:url('images/twitter.png') no-repeat left; }
 
 ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
+
+.node-sermon-series{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.node-type-sermon-series .region-content .block{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
