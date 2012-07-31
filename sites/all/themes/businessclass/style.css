@@ -939,7 +939,7 @@ ul.nice-menu-down { float: right; }
 
 #navigation-right ul.nice-menu li { margin:0 35px 0 0; border:none; background:none; }
 
-/*#navigation-right ul.nice-menu li.last { margin:0; }*/
+#navigation-right ul.nice-menu li.last { margin:0; }
 
 #navigation-right ul.nice-menu li a { color:#01a5e6; outline:none; text-decoration:none; margin:0; padding:0; font-size:18px; text-shadow: 0 1px 0 #eef9fd; }
 
@@ -953,7 +953,7 @@ ul.nice-menu-down { float: right; }
 
 #navigation-right ul.nice-menu li.menuparent ul li.first { border-top:10px solid #19c1f2; }
 
-#navigation-right ul.nice-menu li.menuparent ul li.last{ border-bottom:10px solid #19c1f2; margin-right: none;
+#navigation-right ul.nice-menu li.menuparent ul li.last{ border-bottom:10px solid #19c1f2;
 }
 
 #navigation-right ul.nice-menu li.menuparent ul li:hover { background-color: #01a5e6; }
