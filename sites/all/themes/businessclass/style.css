@@ -953,7 +953,8 @@ ul.nice-menu-down { float: right; }
 
 #navigation-right ul.nice-menu li.menuparent ul li.first { border-top:10px solid #19c1f2; }
 
-#navigation-right ul.nice-menu li.menuparent ul li.last{ border-bottom:10px solid #19c1f2; }
+#navigation-right ul.nice-menu li.menuparent ul li.last{ border-bottom:10px solid #19c1f2; margin-right: none;
+}
 
 #navigation-right ul.nice-menu li.menuparent ul li:hover { background-color: #01a5e6; }
 
