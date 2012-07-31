@@ -1,10 +1,10 @@
-h1, h2, h3, h4, h5, h6 { color:#838383;  }
+h1, h2, h3, h4, h5, h6 { color:#424E47;  }
 
-h1.title, h2.title { border-bottom:1px solid #838383; }
+h1.title, h2.title { border-bottom:1px solid #424E47; }
 
-a, li a.active { color:#0088CC; text-decoration:none; }
+a, li a.active { color:#424E47; text-decoration:none; }
 
-a:hover { color:#0088CC; text-decoration:underline; }
+a:hover { color: #7a9284; text-decoration:underline; }
 
 img.masked:hover, .field-type-image img:hover, .views-field-field-image img:hover { border: 1px solid #a2a2a2; }
 
