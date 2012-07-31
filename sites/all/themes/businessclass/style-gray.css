@@ -95,7 +95,8 @@ a.more:hover, #edit-submit:hover, #edit-preview:hover, input.form-submit:hover, 
 /**
  * Nice menus support
  */
-#navigation-right ul.nice-menu li a { color:#616161; text-shadow: 0 1px 1px #cbcbcb; }
+#navigation-right ul.nice-menu li a { color:#616161; color:#4f4f4f; line-height:140%; 
+text-shadow:0 1px 0 #ffffff; }
 
 #navigation-right ul.nice-menu li.menuparent, #navigation-right ul.nice-menu li.menuparent:hover { background: transparent url("images/gray/main-menu-expanded.png") no-repeat right 10px; }
 
