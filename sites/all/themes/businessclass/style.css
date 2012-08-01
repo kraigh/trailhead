@@ -85,11 +85,11 @@ img.masked:hover, .field-type-image img:hover, .views-field-field-image img:hove
 
 #slideshow .views-field-field-teaser-image img { border:none; background:none; padding:0; }
 
-.shadow-medium { background:transparent url('images/shadow-medium.png') no-repeat bottom center; padding:0 0 20px 0;  }
+/*.shadow-medium { background:transparent url('images/shadow-medium.png') no-repeat bottom center; padding:0 0 20px 0;  }
 
 .shadow-large { background:transparent url('images/shadow-large.png') no-repeat bottom center; padding:0 0 15px 0;  }
 
-.shadow-medium.product, .shadow-medium.blogpost { float:left; }
+.shadow-medium.product, .shadow-medium.blogpost { float:left; }*/
 
 /* Float left for images */
 .page-blog .field-type-image, 
@@ -101,13 +101,13 @@ img.masked:hover, .field-type-image img:hover, .views-field-field-image img:hove
 .page-services .field-type-image,
 .view-promoted-posts .views-field-field-image,
 .view-promoted-posts-2columns .views-field-field-image  { 
-float:left; background:transparent url('images/shadow-medium.png') no-repeat bottom center; padding:0 15px 18px 0; }
+float:left; background:transparent/* url('images/shadow-medium.png')*/ no-repeat bottom center; padding:0 15px 18px 0; }
 
 .view-promoted-posts .views-field-field-image, .view-promoted-posts-2columns .views-field-field-image { padding:20px 0 18px 0; }
 
 .page-archive .team-member { padding:0; }
 
-.field-type-image { background:transparent url('images/shadow-large.png') no-repeat bottom center; padding:0 0 9px 0; }
+.field-type-image { background:transparent/* url('images/shadow-large.png')*/ no-repeat bottom center; padding:0 0 9px 0; }
 
 .no-sidebars .field-name-field-image { text-align:center; }
 
@@ -241,7 +241,7 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', end
 
 #navigation-right { width: 565px; margin: 0; padding:0;  display:block; float:left; }
 
-#page-inside-wrapper { background:transparent url('images/page-inside-shadow.png') no-repeat bottom; margin: 0 auto -150px; padding:0 0 45px 0; position:relative; } 
+#page-inside-wrapper { background:transparent/* url('images/page-inside-shadow.png')*/ no-repeat bottom; margin: 0 auto -150px; padding:0 0 45px 0; position:relative; } 
 
 #page-inside { width: 940px; margin: 0 auto; padding:10px; overflow:hidden; display:block; background:url('images/groovepaper.png'); position:relative;
 /*Box-shadow*/
