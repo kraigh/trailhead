@@ -101,7 +101,7 @@ img.masked:hover, .field-type-image img:hover, .views-field-field-image img:hove
 .page-services .field-type-image,
 .view-promoted-posts .views-field-field-image,
 .view-promoted-posts-2columns .views-field-field-image  { 
-float:left; background:transparent/* url('images/shadow-medium.png')*/ no-repeat bottom center; padding:0 15px 18px 0; }
+float:left;/* background:transparent url('images/shadow-medium.png') no-repeat bottom center;*/ padding:0 15px 18px 0; }
 
 .view-promoted-posts .views-field-field-image, .view-promoted-posts-2columns .views-field-field-image { padding:20px 0 18px 0; }
 
