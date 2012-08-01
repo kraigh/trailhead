@@ -162,6 +162,20 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 	padding-bottom: 0px;
 }
 
+.page-sermons table td.active{
+	background: none;
+}
+
+.page-sermons table td.views-field-field-date{
+	padding-top: 32px;
+	width: 130px;
+}
+
+.page-sermons table td.views-field-field-teaser-image{
+	width: 300px;
+}
+
 .recentsermondeets{
 	padding-left: 120px;
 }
+
