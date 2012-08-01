@@ -161,3 +161,7 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 }
+
+.recentthumb{
+	margin-bottom: 20px;
+}
