@@ -1,3 +1,17 @@
+#Custom Stuff
+AuthUserFile /home/trailhead/webapps/dev/.htpasswd
+AuthName EnterPassword
+AuthType Basic
+require valid-user
+
+#Hide files starting with a dot
+<files .*>
+order allow,deny
+deny from all
+</files>
+
+
+
 #
 # Apache/PHP/Drupal settings:
 #
