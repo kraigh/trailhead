@@ -33,8 +33,7 @@
 <div id="page-wrapper">
 
     <!-- #page -->
-    <div id="page">
-    
+    <div id="page">    
         <!-- #navigation -->
         <div id="navigation" class="clearfix">
         
