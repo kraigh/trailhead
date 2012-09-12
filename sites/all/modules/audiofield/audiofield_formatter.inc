@@ -18,11 +18,11 @@ function theme_audiofield_formatter_audiofield_embedded($variables) {
   
   //If user is file owner check for download permission and display download link
   if ($user->uid==$file->uid && user_access('download own audio files')) {
-     $output .= '<div class="audio-download"><b>Download:</b>' . theme('file_link', array( 'file' => (object) $file )) . '</div>';
+     $output .= '<div class="audio-download"><b>Download: </b>' . theme('file_link', array( 'file' => (object) $file )) . ' (right-click, save-as)</div>';
   }
   elseif (user_access('download all audio files')) {
     //If user has permission to download all audio files, then display download link
-    $output .= '<div class="audio-download"><b>Download:</b>' . theme('file_link',  array( 'file' => (object) $file )) . '</div>';
+    $output .= '<div class="audio-download"><b>Download: </b>' . theme('file_link',  array( 'file' => (object) $file )) . '(right-click, save-as)</div>';
   }   
 
   return $output;

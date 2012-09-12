@@ -1,8 +1,15 @@
 #Custom Stuff
-Options +FollowSymLinks
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www.trailheadonline.org$ [NC]
-RewriteRule ^(.*)$ http://trailheadonline.org$1 [R=301,L]
+AuthUserFile /home/trailhead/webapps/dev/.htpasswd
+AuthName EnterPassword
+AuthType Basic
+require valid-user
+
+#Hide files starting with a dot
+<files .*>
+order allow,deny
+deny from all
+</files>
+
 
 
 #

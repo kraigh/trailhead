@@ -135,7 +135,7 @@ function theme_audiofield_players_wpaudioplayer($variables) {
   $audio_file = $variables['audio_file'];
   return '<object id="audioplayer2" height="24" width="290" data="' . $player_path . '" type="application/x-shockwave-flash">
                           <param value="' . $player_path . '" name="movie"/>
-                          <param value="playerID=2&amp;bg=0xCDDFF3&amp;leftbg=0x357DCE&amp;lefticon=0xF2F2F2&amp;rightbg=0xF06A51&amp;rightbghover=0xAF2910&amp;righticon=0xF2F2F2&amp;righticonhover=0xFFFFFF&amp;text=0x357DCE&amp;slider=0x357DCE&amp;track=0xFFFFFF&amp;border=0xFFFFFF&amp;loader=0xAF2910&amp;soundFile=' . $audio_file . '" name="FlashVars"/>
+                          <param value="playerID=2&amp;bg=0xF8F8F8&amp;leftbg=0xCCCCCC&amp;lefticon=0x424E47&amp;rightbg=0x999999&amp;rightbghover=0xAAAAAA&amp;righticon=0x424E47&amp;righticonhover=0x424E47&amp;text=0x666666&amp;slider=0x666666&amp;track=0xFFFFFF&amp;border=0x666666&amp;loader=0x9FFB8&amp;bgcolor=0xFFFFFF&amp;soundFile=' . $audio_file . '" name="FlashVars"/>
                           <param value="high" name="quality"/>
                           <param value="false" name="menu"/>
                           <param value="transparent" name="wmode"/>
