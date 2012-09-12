@@ -178,3 +178,13 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 .recentsermondeets{
 	padding-left: 120px;
 }
+
+#navigation-right ul.nice-menu li a:hover { text-decoration:underline; }
+
+#block-views-sermon-viewer-block{ margin:0px; }
+
+.node-mt-product .content .field-label-inline { margin-bottom:5px; }
+
+.node-mt-product .content .field-name-field-audio #audioplayer2 { margin-left:60px; margin-bottom:5px; }
+
+.node-mt-product .content .field-type-image { padding:0px; }
