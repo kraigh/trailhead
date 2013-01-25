@@ -59,10 +59,16 @@ function audiofield_field_widget_form(&$form, &$form_state, $field, $instance, $
   $elements = file_field_widget_form($form, $form_state, $field, $instance, $langcode, $items, $delta, $element);
   $settings = $instance['settings'];
 
+  foreach (element_children($elements) as $delta) {
+    $elements[$delta]['#process'] = array('audiofield_field_widget_process');
+  }
   if ($field['cardinality'] == 1) {
     // If there's only one field, return it as delta 0.
     if (empty($elements[0]['#default_value']['fid'])) {
-      $elements[0]['#description'] = theme('file_upload_help', array('description' => $instance['description'], 'upload_validators' => $elements[0]['#upload_validators']));
+      $elements[0]['#description'] = theme('file_upload_help', array(
+        'description' => $instance['description'],
+        'upload_validators' => $elements[0]['#upload_validators']
+      ));
     }
   }
   else {
@@ -75,18 +81,53 @@ function audiofield_field_widget_form(&$form, &$form_state, $field, $instance, $
 /**
  * An element #process callback for the audiofield_widget field type.
  *
- * Expands the audiofield_widget type to additional fields.
+ * Display audio player in node edit mode
  */
- 
 function audiofield_field_widget_process($element, &$form_state, $form) {
+  $fid = isset($element['#value']['fid']) ? $element['#value']['fid'] : 0;
+  $element = file_managed_file_process($element, $form_state, $form);
+  
   $item = $element['#value'];
   $item['fid'] = $element['fid']['#value'];
-
+  $field = field_widget_field($element, $form_state);
   $instance = field_widget_instance($element, $form_state);
-
-  $settings = $instance['settings'];
-  $widget_settings = $instance['widget']['settings'];
-
+   // Add the display field if enabled.
+  if (!empty($field['settings']['display_field']) && $item['fid']) {
+    $element['display'] = array(
+      '#type' => empty($item['fid']) ? 'hidden' : 'checkbox',
+      '#title' => t('Include file in display'),
+      '#value' => isset($item['display']) ? $item['display'] : $field['settings']['display_default'],
+      '#attributes' => array('class' => array('file-display')),
+    );
+  }
+  else {
+    $element['display'] = array(
+      '#type' => 'hidden',
+      '#value' => '1',
+    );
+  }
+  if ($fid && $element['#file']) {
+    $audiofile = file_create_url($element['#file']->uri);
+    $info = pathinfo($audiofile);
+    $op = $info['extension'];
+    $element['filename'] = array(
+      '#type' => 'markup',
+      '#markup' => audiofield_get_player($audiofile, $op),
+      '#weight' => -10,
+    );
+  }
+  
+  // Add the description field if enabled.
+  if (!empty($instance['settings']['description_field']) && $item['fid']) {
+    $element['description'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Description'),
+      '#value' => isset($item['description']) ? $item['description'] : '',
+      '#type' => variable_get('file_description_type', 'textfield'),
+      '#maxlength' => variable_get('file_description_length', 128),
+      '#description' => t('The description may be used as the label of the link to the file.'),
+    );
+  }
   return $element;
 }
 
@@ -96,9 +137,14 @@ function audiofield_field_widget_process($element, &$form_state, $form) {
 function audiofield_field_formatter_info() {
   $formatters = array(
     'audiofield_embedded' => array(
-      'label' => t('Audio'),
+      'label' => t('Audio player with download'),
       'field types' => array('file'),
-      'description' => t('Displays audio embedded in a web page.'),
+      'description' => t('Displays an audio player and optional download link.'),
+    ),
+    'audiofield_nodownload' => array(
+      'label' => t('Audio player only'),
+      'field types' => array('file'),
+      'description' => t('Displays only an audio player.'),
     ),
   );
 
@@ -107,13 +153,22 @@ function audiofield_field_formatter_info() {
 
 /**
  * Implements hook_field_formatter_view().
- TODO: Can implement playlists to group audios hold in multiple valued fields
+TODO: Can implement playlists to group audios hold in multiple valued fields
  */
 function audiofield_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
   $elements = array();
 
-  foreach ($items as $delta => $item) {
-    $elements[] =  array( '#markup' => theme( 'audiofield_formatter_audiofield_embedded', array( 'file' => (object)$item )));    	
+  switch ($display['type']) {
+    case 'audiofield_embedded' :
+      foreach ($items as $delta => $item) {
+        $elements[] = array('#markup' => theme('audiofield_formatter_audiofield_embedded', array('file' => (object) $item)));
+      }
+      break;
+    case 'audiofield_nodownload':
+      foreach ($items as $delta => $item) {
+        $elements[] = array('#markup' => theme('audiofield_formatter_audiofield_nodownload', array('file' => (object) $item)));
+      }
+      break;
   }
 
   return $elements;

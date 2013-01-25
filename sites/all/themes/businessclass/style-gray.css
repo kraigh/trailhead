@@ -188,3 +188,27 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 .node-mt-product .content .field-name-field-audio #audioplayer2 { margin-left:60px; margin-bottom:5px; }
 
 .node-mt-product .content .field-type-image { padding:0px; }
+
+.view-deacons .views-field-field-photo {
+	float: left;
+	padding-right: 10px;
+}
+
+.view-deacons .views-field-field-name {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.view-deacons .views-field-field-last-name {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.view-deacons .views-field-field-role {
+	font-size: 18px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+
+
