@@ -893,6 +893,8 @@ ul.social-bookmarks li.label { padding:0 15px 0 0; }
 
 ul.social-bookmarks li.facebook a { background:url('images/social-media-facebook.png') no-repeat center bottom; }
 
+ul.social-bookmarks li.facebook { margin-top: -7px; }
+
 ul.social-bookmarks li.twitter a { background:url('images/social-media-twitter.png') no-repeat center bottom; }
 
 ul.social-bookmarks li.rss a { background:url('images/social-media-rss.png') no-repeat center bottom; }
