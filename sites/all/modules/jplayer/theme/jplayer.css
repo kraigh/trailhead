@@ -462,5 +462,6 @@ div.jp-playlist {
 }
 
 div.jp-playlist ul li a:after {
-	content: "  (right click and save-as to download)";
+	content: "  (right click to download)";
+	color: black;
 }
