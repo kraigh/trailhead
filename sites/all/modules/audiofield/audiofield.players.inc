@@ -328,7 +328,8 @@ function audiofield_jplayer($player_path, $audio_file) {
     $path_parts = explode('/', $player_path);
     $audio_file_name = array_pop($path_parts);
     $player_base_path = implode('/', $path_parts);
-    drupal_add_js($player_path);
+    // drupal_add_js($player_path);  --  Removed and replaced with line below.
+    drupal_add_js($audio_players['jplayer']['path']);
     $audio_players = audiofield_players();
     drupal_add_css($audio_players['jplayer']['css']);
     return '<div id="jquery_jplayer_' . $instanceIndex . '" class="jp-jplayer"></div>
