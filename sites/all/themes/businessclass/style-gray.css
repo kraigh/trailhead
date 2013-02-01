@@ -18,17 +18,17 @@ blockquote { background:transparent url('images/gray/blockquote.png') no-repeat 
 
 #footer { clear:both; overflow:hidden;
 background: #545454;
-/* IE10 */ 
+/* IE10 */
 background-image: -ms-linear-gradient(top, #434343 0%, #656565 100%);
-/* Mozilla Firefox */ 
+/* Mozilla Firefox */
 background-image: -moz-linear-gradient(top, #434343 0%, #656565 100%);
-/* Opera */ 
+/* Opera */
 background-image: -o-linear-gradient(top, #434343 0%, #656565 100%);
-/* Webkit (Safari/Chrome 10) */ 
+/* Webkit (Safari/Chrome 10) */
 background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #434343), color-stop(1, #656565));
-/* Webkit (Chrome 11+) */ 
+/* Webkit (Chrome 11+) */
 background-image: -webkit-linear-gradient(top, #434343 0%, #656565 100%);
-/* Proposed W3C Markup */ 
+/* Proposed W3C Markup */
 background-image: linear-gradient(top, #434343 0%, #656565 100%);
 /* IE6-9 */
 filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#434343', endColorstr='#656565');
@@ -37,23 +37,23 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#434343', end
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6,
 #subfooter h1, #subfooter h2, #subfooter h3, #subfooter h4, #subfooter h5, #subfooter h6 { text-shadow:0 2px 3px #2e2e2e; }
 
-a.more, #edit-submit, #edit-preview, input.form-submit, #block-subscription-form input.form-submit, 
-.view-promoted-posts .views-field-view-node a {  text-shadow:0 1px 1px #2E2E2E; 
+a.more, #edit-submit, #edit-preview, input.form-submit, #block-subscription-form input.form-submit,
+.view-promoted-posts .views-field-view-node a {  text-shadow:0 1px 1px #2E2E2E;
 /* background */
 background: #9d1d34;
-/* IE10 */ 
+/* IE10 */
 background-image: -ms-linear-gradient(top, #646464 0%, #454545 100%);
-/* Mozilla Firefox */ 
+/* Mozilla Firefox */
 background-image: -moz-linear-gradient(top, #646464 0%, #454545 100%);
-/* Opera */ 
+/* Opera */
 background-image: -o-linear-gradient(top, #646464 0%, #454545 100%);
-/* Webkit (Safari/Chrome 10) */ 
+/* Webkit (Safari/Chrome 10) */
 background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #646464), color-stop(1, #454545));
-/* Webkit (Chrome 11+) */ 
+/* Webkit (Chrome 11+) */
 background-image: -webkit-linear-gradient(top, #646464 0%, #454545 100%);
-/* Proposed W3C Markup */ 
+/* Proposed W3C Markup */
 background-image: linear-gradient(top, #646464 0%, #454545 100%);
-/* IE6-9 */ 
+/* IE6-9 */
 filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#646464', endColorstr='#454545'); }
 
 a.more:hover, #edit-submit:hover, #edit-preview:hover, input.form-submit:hover, #block-subscription-form input.form-submit:hover,
@@ -61,12 +61,12 @@ a.more:hover, #edit-submit:hover, #edit-preview:hover, input.form-submit:hover, 
 
 #subfooter { background: #3f3f3f; }
 
-/* 
+/*
 * Contact, Comments
 */
 .contact-form label, .comment-form label { color:#838383; }
 
-/* 
+/*
 * Latest blogposts
 */
 .view-latest-blogposts .views-row { border-bottom:1px solid #838383; }
@@ -95,7 +95,7 @@ a.more:hover, #edit-submit:hover, #edit-preview:hover, input.form-submit:hover, 
 /**
  * Nice menus support
  */
-#navigation-right ul.nice-menu li a { color:#616161; color:#4f4f4f; line-height:140%; 
+#navigation-right ul.nice-menu li a { color:#616161; color:#4f4f4f; line-height:140%;
 text-shadow:0 1px 0 #ffffff; }
 
 #navigation-right ul.nice-menu li.menuparent, #navigation-right ul.nice-menu li.menuparent:hover { background: transparent url("images/gray/main-menu-expanded.png") no-repeat right 10px; }
@@ -117,7 +117,7 @@ text-shadow:0 1px 0 #ffffff; }
 /* Javascript slideshow */
 #slider-controls ul li a:hover, #slider-controls ul li.activeSlide a { background:url('images/gray/active-slide.png') no-repeat center center; }
 
-#content-slider-controls ul li a:hover, #content-slider-controls ul li.activeSlide a, .yoxview-item a:hover { border: 1px solid #a2a2a2; 
+#content-slider-controls ul li a:hover, #content-slider-controls ul li.activeSlide a, .yoxview-item a:hover { border: 1px solid #a2a2a2;
  /* shadow */
 -webkit-box-shadow:0 1px 1px #b8b8b8;  -moz-box-shadow:0 1px 1px #b8b8b8;  box-shadow:0 1px 1px #b8b8b8; }
 
@@ -160,6 +160,10 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 .node-type-sermon-series .region-content .block{
 	margin-bottom: 0px;
 	padding-bottom: 0px;
+}
+
+.audio-download .file {
+	margin-left: 5px;
 }
 
 .page-sermons table td.active{
