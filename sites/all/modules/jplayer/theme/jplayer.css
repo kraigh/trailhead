@@ -446,3 +446,21 @@ div.jp-video-360p div.jp-jplayer {
 div.jp-jplayer {
 	background-color: #000000;
 }
+
+/*Custom Stuff*/
+
+div.jp-interface {
+	background: none !important;
+	border: none !important;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+div.jp-playlist {
+	background: none !important;
+	border: none !important;
+}
+
+div.jp-playlist ul li a:after {
+	content: "  (right click and save-as to download)";
+}
