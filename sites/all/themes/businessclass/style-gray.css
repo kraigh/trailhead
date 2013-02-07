@@ -223,6 +223,11 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 	content: "(right-click and save-as to download)";
 }
 
+.view-deacons .views-field-field-photo .photo-wrap {
+	padding-top: 40px;
+	margin-top: -40px;
+}
+
 .view-deacons .views-field-field-photo img {
 	padding: 40px;
 	border: 1px solid #bfbfbf;
@@ -251,7 +256,7 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 }
 
 .view-deacons .question {
-	margin-left: 330px;
+	margin-left: 344px;
 }
 
 .view-deacons table.views-view-grid {
