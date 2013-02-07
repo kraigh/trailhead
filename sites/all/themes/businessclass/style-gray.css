@@ -251,7 +251,47 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 }
 
 .view-deacons .question {
-	margin-left: 320px;
+	margin-left: 330px;
+}
+
+.view-deacons table.views-view-grid {
+	border: none;
+	margin-bottom: 40px;
+}
+
+.view-deacons table.views-view-grid tbody tr td {
+	position: relative;
+}
+
+.view-deacons table.views-view-grid tbody tr td .views-field-field-name {
+	position: absolute;
+	left: 22px;
+	top: 70px;
+	visibility: hidden;
+}
+
+.view-deacons table.views-view-grid tbody tr td .views-field-field-role {
+	position: absolute;
+	left: 22px;
+	top: 80px;
+	visibility: hidden;
+}
+
+.view-deacons table.views-view-grid tbody tr td .views-field-field-title {
+	position: absolute;
+	left: 22px;
+	top: 120px;
+	visibility: hidden;
+}
+
+.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-name,
+.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-role,
+.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-title {
+	visibility: visible;
+}
+
+.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-photo img {
+	opacity: .4;
 }
 
 
