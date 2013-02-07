@@ -262,6 +262,7 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 .view-deacons table.views-view-grid tbody tr td {
 	position: relative;
 	border: none;
+	padding: 0px;
 }
 
 .view-deacons table.views-view-grid tbody tr td .views-field-field-name {
@@ -269,6 +270,15 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 	left: 22px;
 	top: 70px;
 	visibility: hidden;
+}
+
+.view-deacons table.views-view-grid tbody tr td .views-field-field-name a {
+	color: #5a5a5a;
+}
+
+.view-deacons table.views-view-grid tbody tr td .views-field-field-name a:hover {
+	color: #5a5a5a;
+	text-decoration: none;
 }
 
 .view-deacons table.views-view-grid tbody tr td .views-field-field-role {
