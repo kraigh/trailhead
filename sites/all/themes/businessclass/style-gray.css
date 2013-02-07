@@ -193,9 +193,14 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 
 .node-mt-product .content .field-type-image { padding:0px; }
 
+.view-deacons .user {
+	margin-bottom: 40px;
+}
+
 .view-deacons .views-field-field-photo {
 	float: left;
 	padding-right: 10px;
+	margin-top: -5px;
 }
 
 .view-deacons .views-field-field-name {
@@ -213,6 +218,42 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 	margin-top: 15px;
 	margin-bottom: 5px;
 }
+
+.jp-playlist ul li a:after {
+	content: "(right-click and save-as to download)";
+}
+
+.view-deacons .views-field-field-photo img {
+	padding: 40px;
+	border: 1px solid #bfbfbf;
+	padding: 5px;
+	margin: 0;
+	-moz-box-shadow: 0px 1px 4px #cccccc;
+	-webkit-box-shadow: 0px 1px 4px #cccccc;
+	-o-box-shadow: 0px 1px 4px #cccccc;
+	box-shadow: 0px 1px 4px #cccccc;
+	background: #fcfcfc;
+	background-image: -ms-linear-gradient(top,#ededed 0%,#ffffff 100%);
+	background-image: -moz-linear-gradient(top,#ededed 0%,#ffffff 100%);
+	background-image: -o-linear-gradient(top,#ededed 0%,#ffffff 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ededed),color-stop(1,#ffffff));
+	background-image: -webkit-linear-gradient(top,#ededed 0%,#ffffff 100%);
+	background-image: linear-gradient(top,#ededed 0%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed',endColorstr='#ffffff');
+}
+
+.view-deacons .views-label {
+	font-weight: bold;
+}
+
+.view-deacons .views-field {
+	margin-bottom: 10px;
+}
+
+.view-deacons .question {
+	margin-left: 320px;
+}
+
 
 
 
