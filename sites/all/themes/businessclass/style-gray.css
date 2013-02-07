@@ -261,6 +261,7 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 
 .view-deacons table.views-view-grid tbody tr td {
 	position: relative;
+	border: none;
 }
 
 .view-deacons table.views-view-grid tbody tr td .views-field-field-name {
