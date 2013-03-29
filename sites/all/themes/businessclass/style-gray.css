@@ -195,6 +195,8 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 
 .view-deacons .user {
 	margin-bottom: 40px;
+	clear: both;
+	padding-top: 20px;
 }
 
 .view-deacons .views-field-field-photo {
