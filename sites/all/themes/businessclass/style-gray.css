@@ -193,29 +193,34 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 
 .node-mt-product .content .field-type-image { padding:0px; }
 
-.view-deacons .user {
+.view-deacons .user,
+.view-teams .team {
 	margin-bottom: 40px;
 	clear: both;
 	padding-top: 20px;
 }
 
-.view-deacons .views-field-field-photo {
+.view-deacons .views-field-field-photo,
+.view-teams .views-field-field-photo {
 	float: left;
 	padding-right: 10px;
 	margin-top: -5px;
 }
 
-.view-deacons .views-field-field-name {
+.view-deacons .views-field-field-name,
+.view-teams .views-field-field-name {
 	font-size: 20px;
 	font-weight: bold;
 }
 
-.view-deacons .views-field-field-last-name {
+.view-deacons .views-field-field-last-name,
+.view-teams .views-field-field-last-name {
 	font-size: 20px;
 	font-weight: bold;
 }
 
-.view-deacons .views-field-field-role {
+.view-deacons .views-field-field-role,
+.view-teams .views-field-field-role {
 	font-size: 18px;
 	margin-top: 15px;
 	margin-bottom: 5px;
@@ -225,12 +230,14 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 	content: "(right-click and save-as to download)";
 }
 
-.view-deacons .views-field-field-photo .photo-wrap {
+.view-deacons .views-field-field-photo .photo-wrap,
+.view-teams .views-field-field-photo .photo-wrap {
 	padding-top: 40px;
 	margin-top: -40px;
 }
 
-.view-deacons .views-field-field-photo img {
+.view-deacons .views-field-field-photo img,
+.view-teams .views-field-field-photo img {
 	padding: 40px;
 	border: 1px solid #bfbfbf;
 	padding: 5px;
@@ -249,66 +256,80 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed',endColorstr='#ffffff');
 }
 
-.view-deacons .views-label {
+.view-deacons .views-label,
+.view-teams .views-label {
 	font-weight: bold;
 }
 
-.view-deacons .views-field {
+.view-deacons .views-field,
+.view-teams .views-field {
 	margin-bottom: 10px;
 }
 
-.view-deacons .question {
+.view-deacons .question,
+.view-teams .question {
 	margin-left: 344px;
 }
 
-.view-deacons table.views-view-grid {
+.view-deacons table.views-view-grid,
+.view-teams table.views-view-grid {
 	border: none;
 	margin-bottom: 40px;
 }
 
-.view-deacons table.views-view-grid tbody tr td {
+.view-deacons table.views-view-grid tbody tr td,
+.view-teams table.views-view-grid tbody tr td {
 	position: relative;
 	border: none;
 	padding: 0px;
 }
 
-.view-deacons table.views-view-grid tbody tr td .views-field-field-name {
+.view-deacons table.views-view-grid tbody tr td .views-field-field-name,
+.view-teams table.views-view-grid tbody tr td .views-field-field-name {
 	position: absolute;
 	left: 12px;
 	top: 87px;
 	visibility: hidden;
 }
 
-.view-deacons table.views-view-grid tbody tr td .views-field-field-name a {
+.view-deacons table.views-view-grid tbody tr td .views-field-field-name a,
+.view-teams table.views-view-grid tbody tr td .views-field-field-name a {
 	color: #5a5a5a;
 }
 
-.view-deacons table.views-view-grid tbody tr td .views-field-field-name a:hover {
+.view-deacons table.views-view-grid tbody tr td .views-field-field-name a:hover,
+.view-teams table.views-view-grid tbody tr td .views-field-field-name a:hover {
 	color: #5a5a5a;
 	text-decoration: none;
 }
 
-.view-deacons table.views-view-grid tbody tr td .views-field-field-role {
+.view-deacons table.views-view-grid tbody tr td .views-field-field-role,
+.view-teams table.views-view-grid tbody tr td .views-field-field-role {
 	position: absolute;
 	left: 12px;
 	top: 92px;
 	visibility: hidden;
 }
 
-.view-deacons table.views-view-grid tbody tr td .views-field-field-title {
+.view-deacons table.views-view-grid tbody tr td .views-field-field-title,
+.view-teams table.views-view-grid tbody tr td .views-field-field-title {
 	position: absolute;
 	left: 12px;
 	top: 126px;
 	visibility: hidden;
 }
 
-.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-name,
-.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-role,
-.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-title {
+.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-nam,
+.view-teams table.views-view-grid tbody tr td:hover .views-field-field-name,
+.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-rol,
+.view-teams table.views-view-grid tbody tr td:hover .views-field-field-role,
+.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-title,
+.view-teams table.views-view-grid tbody tr td:hover .views-field-field-title {
 	visibility: visible;
 }
 
-.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-photo img {
+.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-photo img,
+.view-teams table.views-view-grid tbody tr td:hover .views-field-field-photo img {
 	opacity: .4;
 }
 
