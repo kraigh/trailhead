@@ -25,6 +25,12 @@ regions[page_bottom] = Page bottom
 
 scripts[] = js/jquery.cycle.all.js
 
+; Add jquery.smoothscroll
+scripts[] = js/jquery.smooth-scroll.min.js
+
+; Kraig's magical custom js
+scripts[] = js/scripts.js
+
 settings[breadcrumb_display]= 1
 settings[scrolltop_display]= 1
 settings[color_scheme]= 'default'
