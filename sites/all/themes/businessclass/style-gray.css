@@ -319,9 +319,9 @@ ul.company-info li.rss { background:url('images/rss.png') no-repeat left; }
 	visibility: hidden;
 }
 
-.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-nam,
+.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-name,
 .view-teams table.views-view-grid tbody tr td:hover .views-field-field-name,
-.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-rol,
+.view-deacons table.views-view-grid tbody tr td:hover .views-field-field-role,
 .view-teams table.views-view-grid tbody tr td:hover .views-field-field-role,
 .view-deacons table.views-view-grid tbody tr td:hover .views-field-field-title,
 .view-teams table.views-view-grid tbody tr td:hover .views-field-field-title {
