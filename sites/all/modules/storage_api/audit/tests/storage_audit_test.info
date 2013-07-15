@@ -5,9 +5,9 @@ dependencies[] = storage_audit
 core = 7.x
 hidden = TRUE
 
-; Information added by drupal.org packaging script on 2012-10-15
-version = "7.x-1.4"
+; Information added by drupal.org packaging script on 2013-04-09
+version = "7.x-1.5"
 core = "7.x"
 project = "storage_api"
-datestamp = "1350289930"
+datestamp = "1365469221"
 
